@@ -1,0 +1,623 @@
+<?php
+session_start();
+if (!isset($_SESSION['utms'])) {
+    $_SESSION['utms'] = array();
+    $_SESSION['utms']['utm_source'] = '';
+    $_SESSION['utms']['utm_medium'] = '';
+    $_SESSION['utms']['utm_term'] = '';
+    $_SESSION['utms']['utm_content'] = '';
+    $_SESSION['utms']['utm_campaign'] = '';
+}
+$_SESSION['utms']['utm_source'] = $_GET['utm_source'];
+$_SESSION['utms']['utm_medium'] = $_GET['utm_medium'];
+$_SESSION['utms']['utm_term'] = $_GET['utm_term'];
+$_SESSION['utms']['utm_content'] = $_GET['utm_content'];
+$_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
+
+$price_new = "690";
+$sale = 50;
+$product_id = "данные Karabas";
+$product_name = '';
+$currency = 'грн';
+$marga = 0;
+$ga = '';
+$price_old = 990;
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMW</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/timer.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="compiled/flipclock.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" href="" type="">
+    <link rel="stylesheet" href="libs/megatimer/timer.min.css">
+    <link rel="shortcut icon" href="img/header/4226-256x256x8.png" type="image/x-icon">
+<?
+include '/' . implode('/', array_slice(explode('/', $_SERVER['DOCUMENT_ROOT']), 1, -1)) . '/shop/header.php';
+
+?>
+</head>
+<body id = "body">
+        <header class="header" id="header">
+                <div class="nav">
+                    <div class="logo1">
+                        <img src="img/header/logo.svg" alt="img">
+                    </div>
+                    <div class="right_nav">
+                        <div class="logo2">
+                                <img src="img/header/bmw_logo.png" alt="img">
+                        </div>
+                        <ul>
+                            <li> <a href="#header">ГЛАВНАЯ</a> </li>
+                            <li> <a href="#video">ОБЗОР</a></li>
+                            <li> <a href="#reviews">ОТЗЫВЫ</a></li>
+                            <li> <a href="#cart">СМЕННЫЕ КАРТРИДЖИ</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="burger_menu">
+                        <div class="burger_menu_button">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                        <div class="burger_menu_li">
+                            <div class="burger_menu_content">
+                                <li> <a href="#header">ГЛАВНАЯ</a> </li>
+                                <li> <a href="#video">ОБЗОР</a></li>
+                                <li> <a href="#reviews">ОТЗЫВЫ</a></li>
+                                <li> <a href="#cliker_cart">СМЕННЫЕ КАРТРИДЖИ</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_content">
+                    <div class="cont ">
+                        <div class="left_content">
+                            <h3 class="h3_one">Ароматизатор воздуха BMW</h3>
+                            <h3 class="h3_two">Наслаждайся моментом!</h3>
+                            <div class="form">
+                                <span class="span_three"><?=$landing_price ?>грн.</span> 
+                                <span class="accent"><?=$price_old ?>грн.</span> 
+                                <div class="timer">
+                                    <h6>До конца акции осталось:</h6>
+                                    <div   class="clock " id="timer">
+                                            <script src="libs/megatimer/loop_new.js"></script>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <a  href="#header_footer"><button class="button">заказать</button></a>
+                             
+                        </div>
+                        <div class="right_content">
+                            <img src="img/header/header_content/1111 (6).png" alt="img">
+                            <div class="img text-center">
+                                <a href=""><i class="fas fa-euro-sign"></i></a>
+                                <span>34,95</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+    <div class="all_cont">
+        <main>
+            <section id="video" class="flavors">
+                <div class="cont">
+                    <div class="flavors_content">
+                        <h3>Распаковка BMW Natural Air</h3>
+                        <div id class="video_iframe">
+                                <iframe src="https://player.vimeo.com/video/343214743?title=0&byline=0&portrait=0" 
+                                width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" 
+                                allowfullscreen></iframe>
+                        </div>
+                        <a href="#header_footer"><button>заказать</button></a> 
+                    </div>
+                </div>
+            </section>
+            <section id="bmw_natural" class="bmw_natural">
+                <div class="cont">
+                    <div class="air_content">
+                        <div class="air">
+                            <h3>BMW Natural Air</h3>
+                            <p>Наслаждайся моментом!</p>
+                            <div class="img one">
+                                <img src="img/bmw_air/offer7.jpg" alt="img">
+                            </div>
+                            <div class="img two">
+                                <img src="img/bmw_air/offer8.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="air_two">
+                            <div class="first_img">
+                                <img src="img/bmw_air/offer9.jpg" alt="img">
+                            </div>
+                            <div class="second_img">
+                                <img src="img/bmw_air/offer10.jpg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="aromas_bmw" class="aromas_bmw">
+                <div class="aromas_bmw_content">
+                    <div class="aromo aromos_aromo">
+                        <h2>
+                            „Ароматы BMW - для тех, кто не отказывает себе ни в чем“
+                        </h2>
+                        <p>Karl Friedrich Rapp,<br>Председатель Совета директоров BMW AG</p>
+                    </div>
+                    <div class="aromo_img">
+                        <img src="img/aromo_bmw/Subtract-4.jpg" alt="img">    
+                    </div> 
+                </div>
+            </section>
+            <section class="absolute_sensation">
+                <div class=" absolute_content aromas_bmw_content ">
+                    <div class="aromo_img">
+                        <img src="img/aromo_bmw/Subtract-3.jpg" alt="img">
+                    </div> 
+                    <div class="aromo">
+                        <h2>АБСОЛЮТНАЯ СЕНСАЦИЯ...</h2>
+                        <h5>Покупка обновит ваш автомобиль</h5>
+                        <p>
+                            Оригинальный экологически 
+                            чистый освежитель воздуха 
+                            BMW, разработанный на основе 
+                            натуральных эфирных масел. С 
+                            помощью таких автомобильных парфюмов 
+                            можно создать неповторимый 
+                            запоминающийся стиль вашего 
+                            автомобиля. Вы сможете подобрать 
+                            аромат, который подойдёт под любое 
+                            настроение. Лёгкие ароматы создают 
+                            благоприятную атмосферу, дарят 
+                            уверенность в себе, помогают 
+                            сконцентрироваться.
+                        </p>
+                        <p>
+                            Уникальные запахи 
+                            ароматизаторов созданы 
+                            совместно с парфюмерными 
+                            домами Hugo Boss и Versace. 
+                            Безопасный состав, которых 
+                            не вызывает аллергических 
+                            реакций и головных болей. 
+                            Ароматизированные картриджи 
+                            создают в салоне авто 
+                            уникальный аромат, присущий 
+                            исключительно BMW.
+                        </p>
+                        <a href="#header_footer"><button>заказать</button></a> 
+                    </div>
+                </div>
+            </section>
+            <section class="max_pleasure">
+                <div class="aromas_bmw_content max_pleasure_content">
+                        <div class="aromo">
+                            <h2>
+                                „Получай максимальное удовольствие от вождения BMW.“
+                            </h2>
+                            <p>Augusto Farfus,<br>Идейный директор BMW AG
+                            </p>
+                        </div>
+                        <div class="aromo_img">
+                            <img src="img/aromo_bmw/Subtract-2.jpg" alt="icon">
+                        </div> 
+                </div>
+            </section>
+            <section  class="flavor_minuses" >
+                <h3>Минусы обычных ароматизаторов:</h3>
+                <div class="minuses">
+                    <ul class="minuses_left">
+                        <li>- Опасный состав может вызвать аллергические реакции и головные боли
+                            </li>
+                        <li>- Резкие запахи вызывают раздражение и отвлекают от вождения</li>
+                        <li>- Дешевый дизайн, который выглядит крайне неуместно в салоне дорогого авто</li>
+                    </ul>
+                    <ul class="minuses_right">
+                        <li>- Интенсивность спиртовых ароматизаторов уменьшается уже через несколько дней</li>
+                        <li>- Отсутствуют по-настоящему приятные и богатые оттенки ароматов</li>
+                        <li>- Многие ароматизаторы оставляют несмываемые следы на пластике в салоне</li>
+                    </ul>
+                </div>
+                <div class="flavors_content absolute_content  ">
+                    <div class="aromo_img">
+                        <img src="img/aromo_bmw/Subtract-1.jpg" alt="icon">
+                    </div> 
+                    <div class="aromo">
+                        <h2 >
+                            „Совершенство достижимо если приложить достаточно усилий.“
+                        </h2 >
+                        <p id="aromo_img" >Harald Krüger,<br>Председатель Совета директоров BMW AG</p>
+                    </div>
+                </div>
+            </section>
+            <section  class="do_not_deny_nothing">
+                <div  class="aromas_bmw_content do_not_deny_content">
+                    <div  class="aromo">
+                        <h2>Сертификация в Украине</h2>
+                        <span>Гарантия долгосрочного сотрудничества с нами.</span>
+                        <p>
+                            Наша компания является 
+                            одной из немногих кто 
+                            работает с официальными 
+                            дистрибьюторами BMW AG.
+                            С нами Вы можете быть уверенны 
+                            в качестве и оригинальности 
+                            поставляемой продукции.
+                        </p>
+                    </div>
+                    <div  class="aromo_img  do_noy_img">
+                        <div class="sertificate_div">
+                            <div class="img_sertificate">
+                                <a class="zoom" ><i class="fas fa-search-plus"></i></a>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div  class = "before-el" >
+                        <a href="#aromo_img"><div href class="overlay"></div></a>
+                    </div> 
+                </div>
+            </section>
+            <section id="reviews" class="reviews">
+                <div class="reviews_content"> 
+                    <h3>Отзывы</h3>
+                    <div class="comment">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active " >
+                                    <div class="comment_content">
+                                        <div class="left_comment">
+                                            <h4>Стрельбицкий Александр, г. Киев</h4>
+                                            <p>
+                                                Немцы крассавцы! Качетво отличное, 
+                                                дизайн в стиле марки.  Китайская фигня 
+                                                и рядом не стояла. Заказал еще на тест 
+                                                все запахи.
+                                            </p>
+                                        </div>
+                                        <div class="right_comment">
+                                            <img src="img/comment/11.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" >
+                                    <div class="comment_content">
+                                        <div class="left_comment">
+                                            <h4>Бутко Сергей, г. Кременчуг</h4>
+                                            <p>
+                                                    Заказал еще на будущее! Реально долго пахнет. Доставка быстрая.
+                                            </p>
+                                        </div>
+                                        <div class="right_comment">
+                                            <img src="img/comment/12.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" >
+                                    <div class="comment_content">
+                                        <div class="left_comment">
+                                            <h4>Романюк Юрий, г. Харьков</h4>
+                                            <p>
+                                                Идеально вписалась в салон E39, запах как у дорогих духов. Аромат очень гармонично вписывается в автомобиль. Пока лучший из всех ароматизаторов, что пробовал.
+                                            </p>
+                                        </div>
+                                        <div class="right_comment">
+                                            <img src="img/comment/13.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" >
+                                    <div class="comment_content">
+                                        <div class="left_comment">
+                                            <h4>Кравченко Дмитрий, г. Львов</h4>
+                                            <p>
+                                                    Я и не знал, что у БМВ есть фирменные освежители воздуха. Запах и дизайн вне конкуренции. Всем рекомендую!
+                                            </p>
+                                        </div>
+                                        <div class="right_comment">
+                                            <img src="img/comment/14.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" >
+                                    <div class="comment_content">
+                                        <div class="left_comment">
+                                            <h4>Ковальчук Андрей, г. Одесса</h4>
+                                            <p>
+                                                    Разные вонючки пробовал и дорогие и дешовые из Ашана ничего подобрать не мог. Этот имеет приятный мягкий запах и красивый дизайн. В салоне f30 смотрится гармонично.
+                                            </p>
+                                        </div>
+                                        <div class="right_comment">
+                                            <img src="img/comment/15.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" >
+                                    <div class="comment_content">
+                                        <div class="left_comment">
+                                            <h4>Давыдов Антон, г. Киев</h4>
+                                            <p>
+                                                    Покупал здесь два раза. Первый раз набор, второй раз картриджи. Картриджа действительно хватает на 3-4 месяца. Товар оригинальный.
+                                            </p>
+                                        </div>
+                                        <div class="right_comment">
+                                            <img src="img/comment/2.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cliker_cart" class="replaceable_cartridges cartridges_cliker_new">
+                <div class="cont ">
+                    <h3><span>Сменные картриджи для </span>BMW Natural Air</h3>
+                    <div id="new_sliker" class="cartridges  carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card  " style="width: 18rem;" >
+                                    <img src="img/cartridges/dop1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>Sparkling Raindrops</h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text">
+                                            Смесь цитрусовых, ландыша и мускуса в сочетании с запахом капель дождя.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/cartridges/dop5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>
+                                                Vitalizing Woods
+                                            </h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text">
+                                            Древесные ноты в сочетании с бодрящим апельсином и ванилью.
+                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/cartridges/dop3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>
+                                            Balancing Amber
+                                        </h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text">
+                                            Сбалансированный запах, сладковато-пряный, экзотические цветы и пряности.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/cartridges/dop6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>
+                                                Purifying Green Tea
+                                            </h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text"> 
+                                            Бодрящий фруктово-свежий аромат зеленого чая и мускуса.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/cartridges/dop4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>
+                                                Energizing Tonic
+                                            </h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text">
+                                            Тонизирующий запах эвкалипта и розмарина.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="carousel-item">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/cartridges/dop2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>
+                                                Harmonizing Flowers
+                                            </h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text">
+                                            Цветочная гармония, запахи жасмина и мирта.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#new_sliker" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#new_sliker" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+                    <div class="text-center  batton">
+                            <a href="#header_footer"><button>заказать</button></a>
+                    </div>
+                </div>
+            </section>
+            <section id="cart"  class="replaceable_cartridges">
+                    <div class="cont ">
+                        <h3><span>Сменные картриджи для </span>BMW Natural Air</h3>
+                        <div class="cartridges d-flex flex-wrap ">
+                            <div class="card  " style="width: 18rem;">
+                                    <img src="img/cartridges/dop1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3>Sparkling Raindrops</h3>
+                                        <h4>130грн /картридж</h4>
+                                        <p class="card-text">
+                                            Смесь цитрусовых, ландыша и мускуса в сочетании с запахом капель дождя.
+                                            </p>
+                                    </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/cartridges/dop5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>
+                                            Vitalizing Woods
+                                        </h3>
+                                    <h4>130грн /картридж</h4>
+                                    <p class="card-text">
+                                        Древесные ноты в сочетании с бодрящим апельсином и ванилью.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/cartridges/dop3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>
+                                            Balancing Amber
+                                        </h3>
+                                    <h4>130грн /картридж</h4>
+                                    <p class="card-text">
+                                       Сбалансированный запах, сладковато-пряный, экзотические цветы и пряности.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/cartridges/dop6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>
+                                            Purifying Green Tea
+                                        </h3>
+                                    <h4>130грн /картридж</h4>
+                                    <p class="card-text">
+                                        Бодрящий фруктово-свежий аромат зеленого чая и мускуса.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/cartridges/dop4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>
+                                            Energizing Tonic
+                                        </h3>
+                                    <h4>130грн /картридж</h4>
+                                    <p class="card-text">
+                                        Тонизирующий запах эвкалипта и розмарина.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/cartridges/dop2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>
+                                            Harmonizing Flowers
+                                        </h3>
+                                    <h4>130грн /картридж</h4>
+                                    <p class="card-text">
+                                       Цветочная гармония, запахи жасмина и мирта.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center batton">
+                                <a href="#header_footer"><button>заказать</button></a>
+                            </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <section  class="footer_forma">
+            <div class="header_content">
+                    <div class="cont">
+                        <div id="header_footer" class="left_content">
+                            <h3 class="h3_one">Ароматизатор воздуха BMW</h3>
+                            <h3  class="h3_two">Наслаждайся моментом!</h3>
+                            <span class="span_three"><?=$landing_price ?>грн.</span> 
+                            <span  class="accent"><?=$price_old ?>грн.</span> 
+                            <div  class="form">
+
+                            
+                            <form  action="zakaz.php" method="POST">
+                                <h5>Заказать в <span>1 клик!</span> </h5>
+                                <input type="name" name="name" required placeholder="Ваше имя">
+                                <input type="phone" name="phone" required placeholder="Ваш номер"><br>
+                                <button class="button" type="submit">заказать</button>
+                                
+            <input type="hidden" name="s1" class="price_field_s1" value="<?= $price_new ?>"/>
+            <input type="hidden" name="s2" class="price_field_s2" value="<?= $product_id ?>"/>
+            <input type="hidden" name="s3" class="price_field_s3" value="<?= $product_name ?>" />
+            <input type="hidden" name="uid" class="price_field_s2" value="<?= $uid ?>"/>
+
+            <input type="hidden" name="utm_source" value="<?= $_GET['utm_source'] ?>"/>
+            <input type="hidden" name="utm_medium" value="<?= $_GET['utm_medium'] ?>"/>
+            <input type="hidden" name="utm_term" value="<?= $_GET['utm_term'] ?>"/>
+            <input type="hidden" name="utm_content" value="<?= $_GET['utm_content'] ?>"/>
+            <input type="hidden" name="utm_campaign" value="<?= $_GET['utm_campaign'] ?>"/>
+            <input type="hidden" name="server_name" value="<?= $_SERVER['SERVER_NAME'] ?>"/>
+            <input type="hidden" name="php_self" value="<?= $_SERVER['PHP_SELF'] ?>"/>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="right_content">
+                            <img src="img/header/header_content/1111 (6).png" alt="img">
+                            <div class="img text-center">
+                                <a href=""><i class="fas fa-euro-sign"></i></a>
+                                <span>34,95</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- <footer id="about_us"class="text-center">
+            <img src="img/footer/background-footer.png" alt="img">
+            <p>
+                Украина, Днепропетровская область, г. Кривой Рог,
+                    пл. Горького, 10, офис 9<br>
+                    ООО "Логос"<br>
+                    Политика конфиденциальности
+                </p>
+        </footer> -->
+    <iframe src = "https://adress.officiall.biz.ua/new/" id="adress" frameborder="0" scrolling="no" style="width: 100%; height: 370px; margin: 0 0 -6px 0"></iframe>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="javascript/common.min.js"></script>
+    <script src="javascript/mask_input.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="libs/megatimer/timer.min.js"></script>
+</body>
+</html>

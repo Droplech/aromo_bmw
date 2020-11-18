@@ -1,0 +1,1414 @@
+$headerText: #ffffff
+$textColor: #1C69D4
+
+body 
+    margin: 0
+    padding: 0
+    font-family: 'Roboto', sans-serifs
+    position: relative
+    overflow-x: hidden
+    .all_cont
+        width:1366px
+        margin:0 auto
+        background-color: #fff
+.button
+    width: 250px
+    height: 50px
+    background-color: $textColor
+    border: none
+    font-size: 20px
+    font-weight: 400
+    color: $headerText
+    margin: 30px 0 0 0
+    padding: 0 0 8px 0
+    &:hover
+        cursor: pointer
+    &:focus
+        border: 2px solid #57A2E8
+.cont
+    width: 1220px
+    height: 100%
+    margin: 0 auto
+    overflow: hidden
+header 
+    background-image: url('../img/header/back-13 2.jpg')
+    height: auto
+    margin-left: -1px
+    background-size: cover
+    padding: 0 0 80px 0
+    .nav
+        width: 100%
+        z-index: 20
+        position: fixed
+        display: flex
+        justify-content: space-between
+        left: 0
+        .logo1
+            position: absolute
+            left: 74px
+            top: 22px
+            z-index: 20
+            img 
+                width: 100px
+        .logo1_none
+            display: none
+        .right_nav
+            display: flex
+            justify-content: space-around
+            width: 100%
+            .logo2
+                margin: 23px 0 0 98px
+                img  
+                    width: 150px
+            ul 
+                display: flex
+                list-style: none
+                width: 700px
+                padding: 0
+                margin: 0
+                justify-content: space-evenly
+                li
+                    a 
+                        color: $headerText
+                        line-height: 100px
+                        font-weight: 400
+                        text-decoration: none
+                        &:hover 
+                            cursor: pointer 
+                            color: $textColor
+        .burger_menu_button
+            position: fixed
+            background-color: #1C69D4
+            width: 100px
+            height: 69px
+            top: 0
+            right: 0
+            z-index: 50
+            display: none
+            span
+                position: absolute
+                height: 3px
+                width: 50px
+                background-color: #ffffff
+                
+            .one
+                margin: 25px 0 0 25px
+            .two
+                margin: 35px 0 0 25px
+            .three
+                margin: 45px 0 0 25px
+        .burger_menu_li  
+            padding: 100px 0 0 0
+            position: fixed
+            display: flex
+            flex-direction: column
+            right: 0
+            width: 360px
+            height: 100%
+            background-color: #1C69D4
+            z-index: 30
+            display: none
+            .burger_menu_content
+                display: flex
+                text-align: center
+                flex-direction: column
+                a 
+                    text-decoration: none
+                    color: #fff
+                    line-height: 70px
+                    font-size: 30px
+                    &:hover
+                        color: #000
+        .active 
+            span
+                position: absolute
+                height: 3px
+                width: 50px
+                background-color: #ffffff
+                margin: 30px 0 0 20px
+            .one
+                margin: 30px 0 0 20px
+                transform: rotate(-45deg)
+            .two
+                margin: 30px 0 0 20px
+                display: none
+            .three
+                margin: 30px 0 0 20px
+                transform: rotate(45deg)
+    .header_content
+        padding: 150px 0 0 0
+        .cont
+            display: flex
+            .left_content
+                width: 750px
+                .h3_one 
+                    color: $headerText
+                    font-size: 48px
+                    font-weight: 400
+                    margin: 80px 0 6px 0
+                    padding: 0 0 0 10px
+                    text-transform: uppercase
+                    background-color: $textColor
+                .h3_two
+                    color: $headerText
+                    font-size: 24px
+                    font-weight: 400
+                    margin: 0 0 0 10px
+                .span_three
+                    font-size: 36px
+                    color: $headerText
+                    margin: 30px 0 60px 10px
+                    font-weight: bold
+                .accent
+                    font-size: 25px
+                    text-decoration: line-through
+                    color: $headerText
+                    margin-left: 10px
+                .form 
+                    h5 
+                        color: $headerText
+                        margin: 50px 0 10px 0
+                        span 
+                            text-transform: uppercase
+                    input 
+                        border: none
+                        font-size: 20px
+                        height: 50px
+                        padding: 0 0 0 10px
+
+                    .timer
+                        width: 320px
+                        height: 130px
+                        h6 
+                            font-size: 18px
+                            color: #ffffff
+                            margin: 50px 0 15px 15px
+                            font-weight: 300
+                        .clock
+                
+            .right_content
+                position: relative
+                margin: 110px 0 0 0
+                img 
+                    width: 468px
+                .img 
+                    color: $headerText
+                    position: absolute
+                    top: 145px
+                    left: -86px
+                    width: 130px
+                    height: 50px
+                    background-color: $textColor
+                    line-height: 51px
+                    font-size: 30px
+                    font-weight: bold
+                    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2)
+                    a 
+                       color: $headerText
+                       font-size: 28px
+main 
+    .flavors
+        height: auto
+        padding-top: 50px 
+        .cont
+           
+            .flavors_content
+                text-align: center
+                h3 
+                    color: #000000
+                    margin: 0 0 50px 0
+                    font-size: 36px
+                    font-weight: 400
+                .video_iframe
+                    width: 640px
+                    height: 360px
+                    margin: 0 auto
+                button
+                    width: 250px
+                    height: 50px
+                    background-color: $textColor
+                    border: none
+                    font-size: 20px
+                    font-weight: 400
+                    color: $headerText
+                    margin: 50px 0 0 0
+                    padding: 0 0 8px 0
+                    &:hover
+                        cursor: pointer
+                    &:focus
+                        border: 2px solid #57A2E8
+    .bmw_natural
+        padding: 50px 0 0 0
+        height: 900px
+        .cont
+            .air_content
+                display: flex
+                justify-content: center
+                .air
+                    display: flex
+                    flex-direction: column
+                    margin-right: 1px
+                    h3 
+                        font-size: 34px
+                        font-weight: 400
+                        margin: 0
+                    p 
+                        font-size: 15px
+                        margin: 10px 0 0 0
+                    .img 
+                        width: 370px
+                        overflow: hidden
+                        transition: .5s
+                        img
+                            width: 408px
+                            transform: scale(1.1)
+                            transition: .2s
+                        &:hover
+                            transition: .5s
+                            box-shadow: 0 0 20px rgba(0,0,0,0.5)
+                            img 
+                                transform: scale(1.03)
+                                transition: .2s
+                    .one 
+                        margin: 100px 0 0 0
+                    .two 
+                        margin: 5px 0 0 0
+                .air_two
+                    margin-left: 5px
+                    .first_img
+                        width: 476px
+                        overflow: hidden
+                        transition: .5s
+                        img 
+                            width: 500px
+                            transform: scale(1.1)
+                            transition: .2s
+                        &:hover 
+                            transition: .5s
+                            box-shadow: 0 0 20px rgba(0,0,0,0.2)
+                            img 
+                                transform: scale(1.03)
+                                transition: .2s
+                    .second_img
+                        width: 476px
+                        height: 409px
+                        overflow: hidden
+                        margin: 5px 0 0 0
+                        transition: .5s
+                        img 
+                            width: 470px
+                            height: 458px
+                            transform: scale(1.1)
+                            transition: .2s
+                        &:hover
+                            transition: .5s
+                            box-shadow: 0 0 20px rgba(0,0,0,0.2) 
+                            img 
+                                transform: scale(1.03)
+                                transition: .2s
+    .aromas_bmw
+        height: auto
+        .aromas_bmw_content
+            display: flex
+            justify-content: space-between
+            .aromos_aromo
+                margin: 0 0 0 70px
+                h2 
+                    font-size: 48px
+                    font-weight: 400
+                    color: $textColor
+                    width: 590px
+                    margin: 130px 0 75px 0
+                p 
+                    font-size: 14px 
+                    font-weight: 400
+                    margin: 0
+            .aromo_img
+                width: 670px 
+                height: 419px
+                img 
+                    height: 420px
+                    width: 671px
+                    margin: -1px 0 0 -1px
+    .absolute_sensation
+        padding: 50px 0 0 0
+        // @extend .aromas_bmw 
+        @extend .flavors
+        .absolute_content
+            display: flex
+            justify-content: space-between
+            .aromo_img
+                width: 667px 
+                height: 419px
+                img 
+                    width: 667px
+                    height: 421px       
+            .aromo
+                width: 595px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                h2 
+                    font-size: 36px
+                    color: #000000
+                    font-weight: 400
+                    margin: 0 0 23px 0
+                h5 
+                    font-size: 20px
+                    font-weight: 400 
+                    margin: 0 
+                p
+                    margin: 25px 0 0 0 
+                    font-size: 14px
+                    width: 510px 
+                button
+                    width: 250px
+                    height: 50px
+                    background-color: $textColor
+                    border: none
+                    font-size: 20px
+                    font-weight: 400
+                    color: $headerText
+                    margin: 5px 0 0 0
+                    padding: 0 0 8px 0
+                    &:hover
+                        cursor: pointer
+                    &:focus
+                        border: 2px solid #57A2E8
+    .max_pleasure
+        padding: 50px 0 0 0
+        @extend .aromas_bmw
+        .max_pleasure_content
+            display: flex
+            justify-content: space-between
+            .aromo
+                margin: 0 0 0 70px
+                h2 
+                    font-size: 48px
+                    font-weight: 400
+                    color: $textColor
+                    width: 590px
+                    margin: 130px 0 80px 0
+                p 
+                    font-size: 14px 
+                    font-weight: 400
+                    margin: 0
+            .aromo_img
+                width: 670px 
+                height: 420px
+                img 
+                    height: 421px
+    .flavor_minuses
+        padding: 50px 0 0 0
+        @extend .absolute_sensation
+        h3
+            font-size: 36px 
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+        .minuses
+            display: flex
+            justify-content: space-around
+            ul 
+                list-style: none
+                margin: 0
+                padding: 0
+                li
+                    margin: 10px 0 0 0
+                    font-size: 13px
+        .flavors_content
+            margin: 50px 0 0 0
+            // display: flex
+            .aromo_img
+                width: 670px 
+                height: 420px
+                img 
+                    width: 670px 
+                    height: 420px
+                    margin-left: -1px
+            .aromo
+               h2 
+                   color: $textColor
+                   margin: 130px 0 80px 0
+                   font-size: 48px 
+    .do_not_deny_nothing
+        padding: 50px 0 0 0
+        @extend .aromas_bmw
+        position: relative
+        .do_not_deny_content
+            display: flex
+            justify-content: space-between
+            .aromo
+                width: 600px
+                padding: 0 0 0 100px
+                h2 
+                    color: #000000
+                    font-size: 35px
+                    margin: 0px 0 50px
+                span 
+                    font-size: 20px
+                p 
+                    width: 450px
+                    margin: 30px 0 0 0
+            .do_noy_img
+                width: 670px 
+                height: 420px
+                background-image: url('../img/aromo_bmw/Subtract.png')
+                background-size: cover
+                .sertificate_div
+                    width: 270px
+                    height: 387px
+                    position: relative
+                    margin: 15px 0 0 82px
+                    .img_sertificate
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background-image: url('../img/aromo_bmw/Sertifikat_sootvetstviya.png')
+                        width: 270px
+                        height: 387px
+                        padding: 130px 0 0 100px
+                        transform: scale(1)
+                        transition: .3s
+                        a 
+                            color: #ffffff
+                            font-size: 80px
+                            transition: .3s
+                            display: none
+                        &:hover
+                            transform: scale(1.05)
+                            transition: .3s
+                            cursor: pointer
+                            a 
+                                display: block
+            .before-el
+                position: absolute
+                width: 700px
+                height: 1000px
+                left: 320px
+                top: -200px
+                box-shadow: 20px -15px 10px 4727px rgba(0, 0, 0, 0.5)
+                z-index: 999
+                background-image: url('../img/aromo_bmw/Sertifikat_sootvetstviya.jpg')
+                padding: 450px 0 0 300px
+                display: none
+                a 
+                    color: #ffffff
+                    font-size: 80px
+                    transition: .3s
+                    opacity: 0.6
+                .overlay 
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    width: 1000vh
+                    height: 100vh
+    .reviews
+        height: auto
+        padding: 50px 0 0 0
+        .reviews_content
+            h3 
+                text-transform: uppercase
+                margin: 0
+                font-size: 36px
+                font-weight: 400
+                text-align: center
+            .comment
+                margin: 60px 0 0 0
+                .comment_content
+                    width: 1100px
+                    display: flex
+                    justify-content: center
+                    margin: 0 auto
+                    .left_comment
+                        width: 390px
+                        margin: 0 80px 0 0
+                        h4 
+                            margin: 0 0 20px 0
+                            font-size: 20px
+                            font-weight: 400
+                        p 
+                            margin: 0
+                            font-size: 14px
+                    .right_comment
+                        width: 430px
+                        img 
+                            width: 430px
+                .carousel
+                    .carousel-control-prev,.carousel-control-next
+                        background-image: none
+                        // width: 100px
+                        .carousel-control-prev-icon,.carousel-control-next-icon
+                            background-color: $textColor
+                            border-radius: 50%
+                            width: 50px
+                            height: 50px
+                            background-size: 40%
+    .replaceable_cartridges 
+        padding: 50px 0 100px 0
+        height: auto    
+        display: block 
+        .cont
+            width: 1133px
+            h3
+                font-weight: 600
+                font-size: 36px
+                text-align: center
+                span 
+                    font-weight: 400 
+            .cartridges
+                .card 
+                    border: none
+                    margin: 0 auto
+                    height: 524px
+                    text-align: center
+                    h3  
+                        font-size: 25px
+                    h4
+                        font-size: 19px
+                    img
+                        transform: scale(0.9)
+                        transition: 0.3s
+                        &:hover
+                            transform: scale(1.05)
+                            transition: 0.3s
+                .carousel-control-prev,.carousel-control-next
+                    background-image: none
+                    // width: 100px
+                    .carousel-control-prev-icon,.carousel-control-next-icon
+                        background-color: $textColor
+                        border-radius: 50%
+                        width: 50px
+                        height: 50px
+                        background-size: 40%
+            button
+                width: 250px
+                height: 50px
+                background-color: $textColor
+                border: none
+                font-size: 20px
+                font-weight: 400
+                color: $headerText
+                margin: 0 auto
+                padding: 0 0 8px 0
+                &:hover
+                    cursor: pointer
+                &:focus
+                    border: 2px solid #57A2E8
+    .cartridges_cliker_new
+       display: none 
+.footer_forma
+        @extend header 
+        .header_content
+            padding: 75px 0 0 0
+footer 
+    height: 120px
+    background-color: #000000 
+    position: relative
+    overflow: hidden
+    img 
+        position: absolute  
+        right: 300px 
+    p 
+        color:$headerText
+        margin: 20px 0 0 0
+@media screen and (max-width: 1200px) 
+    .cont
+        width: 100%
+    header 
+        padding: 0 0 100px 0
+        .nav
+            height: 70px
+            .logo1
+                left: 23px
+                top: 8px
+                img
+                    width: 90px 
+            .right_nav
+                height: 70px
+                .logo2
+                    margin: 10px 0 0 98px
+                    img  
+                        width: 135px
+                ul 
+                    li
+                        a 
+                            font-size: 14px
+                            line-height: 71px
+        .cont
+            .left_content
+                width: 569px !important
+                margin-left: 10px
+                .h3_one 
+                   font-size: 36px !important
+                .h3_two
+                    font-size: 20px !important
+                .span_three
+                    font-size: 30px !important
+                .accent
+                   font-size: 23px !important
+                form 
+                    h5 
+                        font-size: 17px !important
+                    input
+                        height: 45px !important
+                        font-size: 16px  !important
+                    button
+                           width: 230px !important
+            .right_content
+                margin-left: 75px !important
+                img 
+                    width: 370px !important
+                    height: 329px !important
+                .img 
+                    top: 130px !important
+                    left: -86px !important
+    .bmw_natural
+        .cont
+            .air_content
+                .air
+                   .img 
+                        width: 340px !important
+                        img
+                            width: 368px !important
+                .air_two
+                    .first_img
+                        width: 451px !important
+                        img 
+                            width: 452px !important
+                    .second_img
+                        width: 451px !important
+                        height: 385px !important
+                        img
+                            width: 447px !important
+                            height: 456px !important
+    .aromas_bmw
+        .aromas_bmw_content
+            .aromos_aromo
+                margin: 0 0 0 60px !important
+                h2 
+                    font-size: 36px !important
+                    width: 409px !important
+            .aromo_img
+                width: 643px !important
+                height: 418px !important
+                img 
+                    height: 419px !important
+                    width: 640px   !important           
+    .absolute_sensation
+        .absolute_content
+            .aromo_img
+                width: 570px !important
+                height: 430px !important
+                img 
+                    width: 570px !important
+                    height: 432px  !important   
+            .aromo
+                width: 492px !important
+                margin: 0 !important
+                h2 
+                   width: 492px !important
+                   font-size: 30px !important
+                h5 
+                    width: 290px !important
+                    font-size: 18px !important
+                p
+                    font-size: 11px!important
+    .max_pleasure
+        .aromas_bmw_content
+            .aromo
+                margin: 0 0 0 60px !important
+                width: 413px !important
+                h2
+                    width: 405px !important
+                    font-size: 36px !important
+            .aromo_img
+                width: 670px !important
+                height: 418px !important
+                img
+                    height: 418px !important
+    .flavor_minuses
+        .aromas_bmw_content
+            .aromo
+                h2 
+                    font-size: 36px !important
+                    width: 391px !important
+                    margin: 73px 0 80px 0 !important
+            .aromo_img
+                width: 670px !important
+                height: 357px !important
+                img
+                    width: 523px !important
+                    height: 358px !important
+    .do_not_deny_nothing
+        .aromas_bmw_content
+            .aromo
+                width: 600px !important
+            .do_noy_img
+                height: 418px !important
+            .before-el
+                left: 200px !important
+    .reviews
+        .reviews_content
+            .comment
+                .comment_content
+                    width: 100% !important
+                    .left_comment
+                        width: 375px !important
+                        margin: 0 0 0 25px !important
+                        p
+                            width: 320px !important
+    .replaceable_cartridges 
+        .cont
+            width: 100% !important
+    body 
+        .all_cont
+            width: 100%
+@media screen and (max-width: 1100px) 
+    .aromas_bmw
+        .aromas_bmw_content
+            .aromos_aromo
+                h2 
+                    width: 364px !important
+                    font-size: 34px !important
+                    margin-bottom: 120px !important
+            .aromo_img
+                img 
+                    width: 100%   !important  
+    .reviews
+        .reviews_content
+            .comment
+                .comment_content
+                    width: 100% 
+                    .left_comment
+                        width: 328px 
+                .carousel
+                    .carousel-control-prev,.carousel-control-next
+                        width: 10%
+    header 
+        .nav
+            .right_nav
+                justify-content: space-evenly !important
+                .logo2
+                    margin: 10px 0 0 120px !important
+                    img  
+                ul
+                    justify-content: space-evenly !important 
+    .absolute_sensation
+        .absolute_content
+            .aromo_img
+                width: 540px !important
+                height: 430px !important
+                img 
+                    width: 540px !important
+                    height: 432px  !important   
+            .aromo
+                width: 492px !important
+                margin: 0 !important
+                h2 
+                   width: 350px !important
+                   font-size: 30px !important
+                p 
+                    width:370px !important
+@media screen and (max-width: 980px) 
+    .aromas_bmw
+        .aromas_bmw_content
+            .aromos_aromo
+                h2 
+                    width: 310px !important
+                    font-size: 34px !important
+                    margin-bottom: 120px !important
+    .max_pleasure
+        .aromas_bmw_content
+            .aromo
+               h2
+                    width: 318px !important
+                    font-size: 35px !important
+    .flavor_minuses
+        .minuses
+            flex-wrap: wrap !important
+            padding: 0 20px
+            ul 
+                li
+                    font-size: 18px !important
+            .minuses_right
+                margin: 10px 0 0 0 !important
+    .do_not_deny_nothing
+        .aromas_bmw_content
+            .before-el
+                left: 130px !important
+    header 
+        .nav
+            .right_nav
+                .logo2
+                    margin: 10px 0 0 120px !important
+    .reviews
+        .reviews_content
+            .comment
+                .comment_content
+                    width: 100% !important
+                    .left_comment
+                        width: 237px !important
+                        margin: 0 0 0 25px !important
+                        h4 
+                            font-size: 14px !important
+                        p
+                            width: 155px !important
+    .absolute_sensation
+        .absolute_content
+            .aromo
+                p
+                    margin: 20px 0 0 0 !important
+                    width: 350px !important
+                button
+                    margin: 20px 0 0 0 !important
+    header 
+        .header_content
+            .cont
+                .left_content
+                    width: 525px !important
+                    .h3_one 
+                        font-size: 30px !important
+                .right_content
+                    margin: 100px 0 0 0 !important
+@media screen and (max-width: 860px)             
+    header 
+        .nav
+            .right_nav
+                .logo2
+                    margin: 10px 0 0 -420px !important
+                ul
+                    display: none !important
+            .burger_menu_button
+                display: block
+        .header_content
+            .cont
+                .left_content
+                    width: 400px !important
+                    .h3_one 
+                        font-size: 25px !important
+                    .h3_two
+                        
+                        font-size: 18px !important
+                    .span_three
+                        font-size: 25px !important
+                    .accent
+                        font-size: 19px !important
+                    form 
+                        h5 
+                            font-size: 17px !important
+                        input
+                            height: 40px !important
+                            font-size: 13px !important
+                        button
+                            width: 196px !important
+                            height: 43px !important
+                            font-size: 20px !important
+                .right_content
+                    margin: 63px 0 0 0 !important
+                    img 
+                        width: 332px !important
+                        height: 300px !important
+    .aromas_bmw
+        .aromas_bmw_content
+            .aromos_aromo
+                h2 
+                    margin: 100px 0 117px 0 !important
+    .reviews
+        .reviews_content
+            h3 
+             .comment
+                .comment_content
+                    flex-wrap: wrap !important
+                    height: 400px !important
+                    width: 100px !important
+                    .left_comment
+                        width: 410px !important
+                        text-align: center
+                        p
+                            margin: 0 auto 20px !important
+                            width: 100% !important
+    .bmw_natural
+        .cont
+            .air_content
+                .air
+                    .one
+                        width: 290px !important 
+                    .two 
+                        width: 290px !important 
+                .air_two
+                    .first_img
+                        width: 430px !important
+                    .second_img
+                        width: 430px !important 
+    .absolute_sensation
+        .absolute_content
+            .aromo
+                width: 100% !important
+                p
+                    margin: 20px 0 0 0 !important
+                    width: 334px !important
+                button
+                    margin: 20px 0 0 0 !important                     
+@media screen and (max-width: 800px)
+    header 
+       .header_content
+            padding: 150px 0 0 0 !important
+            .cont
+                display: flex !important
+                flex-wrap: wrap-reverse !important
+                .left_content
+                    width: 450px !important
+                    margin: 0 auto !important
+                    text-align: center !important
+                    .h3_one 
+                        font-size: 27px !important
+                    .timer
+                        margin: 0 auto
+                .right_content
+                    margin: 72px auto 0  !important
+                    img 
+                        width: 351px !important
+                        height: 301px !important
+    .aromas_bmw
+        .aromas_bmw_content
+            flex-wrap: wrap-reverse
+            .aromos_aromo
+                margin: 0 auto !important
+                text-align: center !important
+                h2
+                    width: 411px !important
+            .aromo_img
+                width: 100% !important
+                background-color: $textColor
+    .absolute_sensation
+        .absolute_content
+            flex-wrap: wrap
+            .aromo_img
+                width: 100% !important
+                background-color: $textColor
+                img 
+                   width: 100% !important
+                   height: 432px !important 
+                   margin-top: -1px !important      
+            .aromo
+                width: 100% !important
+                text-align: center
+                h2 
+                    text-align: center !important
+                    width: 100% !important
+                    margin: 23px 0 23px 0 !important
+                h5 
+                    text-align: center !important
+                    width: 100% !important
+                p
+                    font-size: 15px !important
+                    padding: 0 10px
+                    margin: 10px auto !important
+                    width: 100% !important
+    .max_pleasure
+        .max_pleasure_content
+            .aromo
+                margin: 0 auto !important
+                h2
+                    width: 100% !important
+                    text-align: center 
+                p
+                    text-align: center 
+    .do_not_deny_nothing
+        .do_not_deny_content
+            .aromo
+                margin: 0 auto
+                padding: 0 !important
+                text-align: center
+                h2
+                    text-align: center 
+                span
+                    margin: 0 !important
+                p 
+                   margin: 20px  auto 0  !important
+                   text-align: center
+            .do_noy_img
+                .sertificate_div
+                    margin: 15px auto 0 !important
+                    .img_sertificate
+                       background-image: url('../img/aromo_bmw/Sertifikat_sootvetstviya.png')
+            .before-el
+                position: absolute
+                width: 700px
+                height: 1000px
+                left: 55px !important
+                top: -200px
+                box-shadow: 20px -15px 10px 4727px rgba(0, 0, 0, 0.5)
+                z-index: 999
+                background-image: url('../img/aromo_bmw/Sertifikat_sootvetstviya.jpg')
+                padding: 450px 0 0 300px
+                display: none
+                a 
+                    color: gray
+                    font-size: 80px
+                    transition: .3s
+                    opacity: 0.6
+                .overlay 
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    width: 1000vh
+                    height: 100vh
+    .reviews
+        .reviews_content
+            .comment
+                .comment_content
+                    flex-wrap: wrap !important
+                    height: 360px !important
+                    .left_comment
+                        width: 390px !important
+                        margin: 0 0 20px 0 !important 
+                        text-align: center
+                        p
+                            width: 100% !important
+@media screen and (max-width: 768px)
+    header 
+        background-image: url('../img/header/back-1_2 (1).png')
+        background-color: #322E25 !important
+        background-position: top left !important
+        background-size: 100% auto !important
+        background-repeat: no-repeat !important
+        .nav
+            .right_nav
+                .logo2
+                    margin: 10px 0 0 -300px  !important
+            .burger_menu_li
+                width: 100%
+                height: 100%
+                padding: 220px 0 0 0 
+                .burger_menu_content
+                    a 
+                        font-size: 30px
+                        line-height: 55px
+        .header_content
+            padding: 290px 0 0 0 !important
+    .bmw_natural
+        height: auto !important
+        padding: 50px 0 50px 0 !important
+        .cont
+            .air_content
+                flex-wrap: wrap
+                .air
+                    text-align: center !important
+                    .one 
+                        width: 100% !important
+                        img 
+                            width: 100% !important
+                    .two 
+                        width: 100% !important
+                        img 
+                           width: 100% !important
+                .air_two
+                    margin: 5px 0 0 0 !important
+                    .first_img
+                        width: 100% !important
+                        img 
+                           width: 100% !important
+                    .second_img
+                        width: 100% !important
+                        height: 458px !important 
+                        img 
+                            width: 100% !important
+                            height: 518px !important
+    .do_not_deny_nothing
+        .aromas_bmw_content
+            .before-el
+                left: 0 !important    
+@media screen and (max-width: 640px)
+    .reviews
+        .reviews_content
+            h3 
+             .comment
+                .comment_content
+                    .left_comment
+                        width: 300px !important
+                    .right_comment
+                        width: 300px !important
+                        img
+                            width: 300px !important
+    .flavors
+        .cont
+            .timer
+                width: 300px !important
+                .clock
+                    width: 100% !important
+                    margin: 0 auto !important
+            .flavors_content    
+                h6 
+                    margin: 0 0 15px  0 !important
+                    font-size: 20px !important
+                    text-align: center !important                  
+                .video_iframe 
+                    width: 100% !important                              
+    .bmw_natural
+        .cont
+            .air_content
+                .air
+                    text-align: center
+                    margin-right: 0  !important
+    .wrap_timer
+        .timer-slide-bounding,  .timer-slide-new, .timer-slide-old
+            padding: 0 !important 
+    header 
+        .nav
+            .right_nav
+                .logo2
+                    margin: 10px 0 0 0 !important
+        .header_content
+            .right_content
+                .img 
+                    left: -33px !important
+    .replaceable_cartridges
+        display: none !important
+    .cartridges_cliker_new
+       display: block !important
+@media screen and (max-width: 460px)
+    .flavor_minuses
+        h3 
+            padding: 0 15px !important
+            font-size: 35px !important
+        .minuses
+            text-align: center
+        .flavors_content
+            .aromo
+                h2 
+                    padding: 0 15px !important
+    .flavors
+        .cont
+            .timer
+                width: 100% !important
+                height: 100% !important
+                .clock
+                    width: 100% !important
+            .flavors_content 
+                h3 
+                    margin: 0 !important
+                .video_iframe 
+                    height: 220px !important
+                    margin: 50px 0 !important
+            .flavors_content
+                button
+                    margin: 0 !important
+    .aromas_bmw
+        .aromas_bmw_content
+            .aromos_aromo
+                h2
+                    width: 100% !important
+                    font-size: 30px !important
+                    padding: 0 15px !important
+                    margin: 50px 0 !important
+            .aromo_img
+                width: 100% !important
+                height: 250px !important
+                img 
+                    height: 250px !important
+                    width: 100% !important
+                    margin: -1px 0 0 -1px !important
+    .replaceable_cartridges 
+        padding: 0 !important
+        height: auto  !important 
+        padding: 0 0 20px 0 !important  
+        .cont
+            width: 100% !important
+            h3
+                font-weight: 600 
+                font-size: 31px !important
+                text-align: center
+                padding: 0 15px !important
+                span 
+                    font-weight: 400 
+            .cartridges
+                width: 100% !important
+                margin: 0 !important
+                padding: 0 !important
+                .carousel-inner
+                    text-align: center !important
+                    display: flex !important
+                    flex-direction: row !important
+                    .card 
+                        border: none
+                        margin: 0  auto!important
+                        height: 524px
+                        text-align: center
+                        width: 288px !important
+                    .carousel-item
+                       padding: 0 !important
+                        
+                    .carousel-control-prev,.carousel-control-next
+                        background-image: block
+                        .carousel-control-prev-icon,.carousel-control-next-icon
+                            background-color: red
+                            border-radius: 50%
+                            width: 50px
+                            height: 50px
+                            background-size: 40%
+        header 
+            .header_content
+                .cont
+                    .right_content
+                        .img 
+                            top: 145px !important
+                            left: -12px !important
+    .do_not_deny_nothing
+        .do_not_deny_content
+            .aromo
+                padding: 30px 15px 0 !important
+                width: 100% !important
+                text-align: center !important
+                h2 
+                   margin: 0 0 30px !important 
+                span 
+                    margin: 0 !important
+                p 
+                    width: 100% !important
+            .do_noy_img
+                .sertificate_div
+                    width: 160px !important
+                    height: 220px !important
+                    position: relative
+                    margin: 0 auto !important
+                    .img_sertificate
+                        position: absolute
+                        top: 14px !important
+                        left: 0
+                        background-image: url('../img/aromo_bmw/Sertifikat_sootvetstviya.jpg')
+                        width: 160px !important
+                        height: 220px !important
+                        padding: 62px 0 0 50px !important
+                        transform: scale(1)
+                        transition: .3s
+                        background-size: 160px 220px !important
+                        background-repeat: no-repeat
+                        a 
+                            color: gray
+                            font-size: 60px !important
+                            transition: .3s
+                            display: none
+                        &:hover
+                            transform: scale(1.05)
+                            transition: .3s
+                            cursor: pointer
+                            a 
+                                display: block
+            .before-el
+                position: absolute
+                width: 100% !important
+                height: 560px !important
+                left: 0  !important
+                top: 0 !important
+                box-shadow: 20px -15px 10px 4727px rgba(0, 0, 0, 0.5)
+                z-index: 999
+                background-image: url('../img/aromo_bmw/Sertifikat_sootvetstviya.jpg')
+                padding: 450px 0 0 300px
+                display: none
+                overflow: auto !important
+                background-size: 100% 560px !important
+                background-repeat: no-repeat !important
+                a 
+                    color: gray
+                    font-size: 80px
+                    transition: .3s
+                    opacity: 0.6
+                .overlay 
+                    display: block
+                    position: fixed
+                    top: 0
+                    left: 0
+                    width: 1000vh
+                    height: 100vh    
+    header 
+        padding: 0 0 50px 0 !important
+        .nav
+            .logo1
+                left: 0 !important
+            .right_nav
+                .logo2
+                    margin: 10px 0 0 -20px !important
+        .header_content
+            padding: 120px 0 0 0 !important
+            .cont
+                .right_content
+                    .img 
+                        left: -10px !important  
+                .left_content
+                    .h3_one 
+                        font-size: 32px !important
+                        margin: 40px 0 13px !important
+                    form 
+                       
+                        input
+                            height: 50px !important
+                            font-size: 20px !important
+                            margin-top: 10px !important
+                            width: 300px !important
+    .cartridges_cliker_new 
+        padding: 50px 0 50px 0 !important 
+        .cartridges
+            .carousel-control-prev, .carousel-control-next
+                top: -250px !important
+                width: 23% !important
+    .absolute_sensation
+        .absolute_content
+            display: flex 
+            .aromo_img
+                width: 100% !important 
+                height: 250px !important
+                img 
+                    width: 100% !important
+                    height: 250px   !important  
+            .aromo
+                p
+                    padding: 0 15px !important   
+    .reviews
+        .reviews_content
+            .comment
+                .comment_content
+                    .left_comment
+                        width: 390px
+                        height: 141px !important
+                        margin: 0 80px 0 0
+                        h4 
+                            margin: 0 0 20px 0
+                            font-size: 20px
+                            font-weight: 400
+                        p 
+                            margin: 0
+                            font-size: 14px
+                    .right_comment
+                        width: 100% !important
+                        img 
+                            width: 100% !important
+                .carousel
+                    .carousel-control-prev,.carousel-control-next
+                        top: 150px !important
+                        width: 23% !important
+                        .carousel-control-prev-icon,.carousel-control-next-icon
+                            background-color: $textColor
+                            border-radius: 50%
+                            width: 50px
+                            height: 50px
+                            background-size: 40%    
+    .bmw_natural
+        .cont
+            .air_content
+                .air
+                    .one 
+                        margin: 50px 0 0 0  !important
+                .air_two
+                    .second_img
+                        height: 281px !important
+                        img 
+                           height: 350px !important
+    .max_pleasure
+        .max_pleasure_content
+            .aromo
+                h2 
+                    margin: 50px 0 !important 
